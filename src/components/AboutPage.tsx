@@ -30,22 +30,22 @@ export const AboutPage: React.FC = () => {
         <section className="bg-white rounded-2xl border border-[#E8E1D5] p-8 sm:p-12 artisan-card space-y-6">
           <div className="flex items-center gap-2 text-[#B85D38] font-bold text-xs uppercase tracking-wider">
             <Feather className="w-4 h-4" />
-            <span>Our Brand Story</span>
+            <span>Author & Publisher Vision</span>
           </div>
 
           <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-[#221F1C]">
-            Why We Founded Truescape
+            Practical Digital Guides That Make Life Easier
           </h2>
 
           <div className="prose text-sm sm:text-base text-[#4A443E] space-y-4 leading-relaxed font-sans">
             <p>
-              In a digital marketplace crowded with disposable content, algorithmically driven recommendations, and restrictive walled gardens, Truescape was established with a singular conviction: readers deserve digital books that feel like genuine personal treasures.
+              In a digital marketplace crowded with disposable content, endless filler chapters, and restrictive walled gardens, <strong>TrueScape</strong> was created with a clear and urgent mission: to provide everyday readers with practical digital guides that cut straight to the truth.
             </p>
             <p>
-              Hamtramck, Michigan has always been defined by quiet craftsmanship, cultural diversity, and deep-seated independence. That same spirit shapes how we select every single title in our catalog. Rather than attempting to stock millions of unvetted titles, Truescape deliberately curates eBooks of notable depth, stylistic brilliance, and lasting relevance.
+              Authored and published by <strong>Hamza Al_madhrahi</strong>, each eBook in the TrueScape collection is meticulously structured to solve real-world challenges — from deep marital harmony and emotional character resilience, to financial independence, lasting physical health, genuine friendship, and non-technical mastery of artificial intelligence.
             </p>
             <p>
-              When you purchase an eBook through Truescape, you receive universal, DRM-free files in standard EPUB and PDF formats. You can read them on any device you choose, back them up on your own storage, and enjoy them without platform lock-in.
+              Rooted in our community in Hamtramck, Michigan, TrueScape champions instant digital delivery. Readers shouldn't wait days for packages or pay unnecessary postage fees. The moment you order, your high-resolution PDF and universal EPUB files are delivered directly to your device so you can start reading immediately.
             </p>
           </div>
         </section>

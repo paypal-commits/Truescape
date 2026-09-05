@@ -23,7 +23,29 @@ export const Navbar: React.FC = () => {
   };
 
   return (
-    <header className="sticky top-0 z-40 bg-[#FAF7F2]/90 backdrop-blur-md border-b border-[#E8E1D5] transition-all duration-200">
+    <div className="sticky top-0 z-40">
+      {/* Top Announcement Bar from truescape.us */}
+      <div className="bg-[#221F1C] text-[#FAF7F2] text-[11px] sm:text-xs py-2 px-4 border-b border-[#38322B]">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <div className="flex items-center gap-2 mx-auto sm:mx-0">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#C58B39] animate-ping" />
+            <span className="tracking-wide font-medium">
+              Instant eBook Downloads • Read Anytime, Anywhere
+            </span>
+          </div>
+          <div className="hidden sm:flex items-center gap-5 text-[#C8BFB3] text-[11px]">
+            <a href="tel:3135649075" className="hover:text-white transition-colors">
+              Support: 313-564-9075
+            </a>
+            <span className="text-[#5E554C]">|</span>
+            <a href="mailto:Truescape00@yahoo.com" className="hover:text-white transition-colors">
+              Truescape00@yahoo.com
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <header className="bg-[#FAF7F2]/95 backdrop-blur-md border-b border-[#E8E1D5] transition-all duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Brand Logo & Origin Tag */}
@@ -225,6 +247,7 @@ export const Navbar: React.FC = () => {
           </div>
         </div>
       )}
-    </header>
+      </header>
+    </div>
   );
 };

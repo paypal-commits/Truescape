@@ -33,59 +33,83 @@ export const LegalModals: React.FC = () => {
         <div className="flex-1 overflow-y-auto p-6 sm:p-8 space-y-4 text-xs sm:text-sm text-[#4A443E] leading-relaxed">
           {legalModal === 'privacy' && (
             <>
-              <p className="font-semibold text-[#221F1C]">Last Updated: {new Date().getFullYear()}</p>
+              <p className="font-semibold text-[#221F1C]">Last Updated: August 2026</p>
               <p>
-                At Truescape (Hamtramck, Michigan), we believe your reading habits are personal and sacred. We do not track page-turns, sell customer data to advertising brokers, or monitor reading speed.
+                TrueScape values your privacy. We do not sell or trade your personal information. Information gathered during your order is strictly utilized to process transactions, deliver digital eBooks, and provide customer assistance.
               </p>
               <h4 className="font-bold text-[#221F1C] text-sm pt-2 font-editorial">1. Information We Collect</h4>
               <p>
-                We only collect information strictly necessary to process your payment and deliver digital files (your name, email address, and payment credentials handled securely via our payment processor).
+                We collect essential details to fulfill your digital orders: name, email address, and billing information securely processed through our certified payment gateway.
               </p>
-              <h4 className="font-bold text-[#221F1C] text-sm pt-2 font-editorial">2. Data Security & Storage</h4>
+              <h4 className="font-bold text-[#221F1C] text-sm pt-2 font-editorial">2. Digital Security</h4>
               <p>
-                All electronic transactions are processed using industry-standard 256-bit encryption. Payment card numbers are never stored in raw form on Truescape servers.
+                All data transmission is encrypted via industry-standard SSL/TLS protocols. We never store complete credit card information on our servers.
               </p>
-              <h4 className="font-bold text-[#221F1C] text-sm pt-2 font-editorial">3. Contacting Us</h4>
+              <h4 className="font-bold text-[#221F1C] text-sm pt-2 font-editorial">3. Contact Official Headquarters</h4>
               <p>
-                Questions regarding our privacy practices may be directed to our Hamtramck headquarters at <strong>2018hamza750@gmail.com</strong> or by phone at <strong>313-564-9075</strong>.
+                Should you have any questions about our privacy practices or this Privacy Policy, please call <strong>+1 313-564-9075</strong>, email us at <strong>Truescape00@yahoo.com</strong>, or write to us at <strong>2727 Yemans St, Hamtramck MI 48212, United States</strong>.
               </p>
             </>
           )}
 
           {legalModal === 'terms' && (
             <>
-              <p className="font-semibold text-[#221F1C]">Effective: {new Date().getFullYear()}</p>
+              <p className="font-semibold text-[#221F1C]">Last updated: August 27, 2026</p>
               <p>
-                By purchasing digital eBooks through Truescape, you enter into a digital agreement granting you a permanent, non-exclusive personal reading license.
+                By accessing or purchasing from this store, you agree to the following terms.
               </p>
-              <h4 className="font-bold text-[#221F1C] text-sm pt-2 font-editorial">1. DRM-Free Personal License</h4>
+              <h4 className="font-bold text-[#221F1C] text-sm pt-2 font-editorial">1. Digital Products</h4>
               <p>
-                Truescape files are delivered without proprietary digital rights management (DRM) locks so you can read them on your chosen devices. However, you agree not to redistribute, resell, or publicly broadcast the files in violation of copyright law.
+                All products sold are digital e-books delivered electronically. No physical goods will be shipped. Upon completing your purchase, you will receive access to download your e-book immediately.
               </p>
-              <h4 className="font-bold text-[#221F1C] text-sm pt-2 font-editorial">2. Immediate Delivery</h4>
+              <h4 className="font-bold text-[#221F1C] text-sm pt-2 font-editorial">2. Personal Use Only</h4>
               <p>
-                Because items are digital goods, access begins immediately upon payment confirmation.
+                All e-books are for personal use only. You may not reproduce, distribute, resell, or share the content in any form without written permission from the author.
               </p>
-              <h4 className="font-bold text-[#221F1C] text-sm pt-2 font-editorial">3. Jurisdiction</h4>
+              <h4 className="font-bold text-[#221F1C] text-sm pt-2 font-editorial">3. Intellectual Property</h4>
               <p>
-                These terms are governed in accordance with the laws of the State of Michigan, United States.
+                All content within our e-books is protected by copyright. Unauthorized use or piracy is strictly prohibited.
+              </p>
+              <h4 className="font-bold text-[#221F1C] text-sm pt-2 font-editorial">4. Pricing & Currency</h4>
+              <p>
+                All prices are listed in USD. We reserve the right to change prices at any time without notice.
+              </p>
+              <h4 className="font-bold text-[#221F1C] text-sm pt-2 font-editorial">5. Limitation of Liability</h4>
+              <p>
+                We are not liable for any indirect, incidental, or consequential damages arising from the use of our digital products.
+              </p>
+              <h4 className="font-bold text-[#221F1C] text-sm pt-2 font-editorial">6. Governing Law & Contact</h4>
+              <p>
+                These terms are governed by the laws of the United States. For any questions, contact us at <strong>Truescape00@yahoo.com</strong> or call <strong>+1 313-564-9075</strong> (2727 Yemans St, Hamtramck MI 48212).
               </p>
             </>
           )}
 
           {legalModal === 'refund' && (
             <>
-              <p className="font-semibold text-[#221F1C]">Effective: {new Date().getFullYear()}</p>
-              <p>
-                We stand firmly behind the quality and integrity of our digital book editions.
+              <p className="font-semibold text-[#221F1C]">Last updated: August 26, 2026</p>
+              <p className="font-medium text-[#B85D38]">
+                Due to the digital nature of our products, all sales are final and non-refundable once the e-book has been delivered or accessed.
               </p>
-              <h4 className="font-bold text-[#221F1C] text-sm pt-2 font-editorial">1. Technical Guarantee</h4>
+              <h4 className="font-bold text-[#221F1C] text-sm pt-2 font-editorial">No Refunds on Digital Products</h4>
               <p>
-                If a downloaded file is damaged, contains typographical defects, or fails to render on standard e-readers, our support team will promptly issue a corrected file or provide full technical assistance.
+                Because our e-books are delivered instantly as digital downloads, we are unable to offer refunds, exchanges, or cancellations after purchase. This policy exists because digital files cannot be "returned" once accessed.
               </p>
-              <h4 className="font-bold text-[#221F1C] text-sm pt-2 font-editorial">2. 14-Day Satisfaction Window</h4>
+              <h4 className="font-bold text-[#221F1C] text-sm pt-2 font-editorial">Exceptions</h4>
               <p>
-                If an unresolved technical defect prevents you from enjoying the eBook, you may request a refund within 14 days of purchase by contacting <strong>2018hamza750@gmail.com</strong> with your order confirmation ID.
+                We will issue a full refund in the following cases:
+              </p>
+              <ul className="list-disc pl-5 space-y-1">
+                <li>You were charged more than once for the same order</li>
+                <li>The file is corrupted or cannot be opened, and we are unable to provide a working replacement within 3 business days</li>
+              </ul>
+              <h4 className="font-bold text-[#221F1C] text-sm pt-2 font-editorial">How to Request a Refund</h4>
+              <p>
+                If you believe you qualify for a refund under the exceptions above, please contact us at <strong>Truescape00@yahoo.com</strong> within 7 days of your purchase, including your order number and a description of the issue.
+              </p>
+              <h4 className="font-bold text-[#221F1C] text-sm pt-2 font-editorial">Chargebacks</h4>
+              <p>
+                We take fraudulent chargebacks seriously. Filing a chargeback for a successfully delivered digital product may result in being permanently banned from purchasing from our store.
               </p>
             </>
           )}

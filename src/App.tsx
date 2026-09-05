@@ -13,6 +13,7 @@ import { CustomerLibraryPage } from './components/CustomerLibraryPage';
 import { AboutPage } from './components/AboutPage';
 import { ContactPage } from './components/ContactPage';
 import { Footer } from './components/Footer';
+import { TrueScapeFeatures } from './components/TrueScapeFeatures';
 import { SampleReaderModal } from './components/SampleReaderModal';
 import { SearchModal } from './components/SearchModal';
 import { LegalModals } from './components/LegalModals';
@@ -96,6 +97,7 @@ const MainContent: React.FC = () => {
             </section>
 
             <FeaturedBooks />
+            <TrueScapeFeatures />
             <CategorySection />
 
             {/* Editorial Invitation Banner */}

@@ -122,21 +122,25 @@ export const Footer: React.FC = () => {
             <ul className="space-y-3 text-xs sm:text-sm text-[#D4CBC0]">
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#D49746] flex-shrink-0 mt-0.5" />
-                <span>Truescape<br />Hamtramck, MI</span>
+                <span>
+                  Truescape<br />
+                  2727 Yemans St<br />
+                  Hamtramck MI 48212, USA
+                </span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#D49746] flex-shrink-0" />
                 <a href="tel:3135649075" className="hover:text-white transition-colors">
-                  313-564-9075
+                  +1 313-564-9075
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#D49746] flex-shrink-0" />
                 <a
-                  href="mailto:2018hamza750@gmail.com"
+                  href="mailto:Truescape00@yahoo.com"
                   className="hover:text-white transition-colors break-all"
                 >
-                  2018hamza750@gmail.com
+                  Truescape00@yahoo.com
                 </a>
               </li>
             </ul>

@@ -93,7 +93,7 @@ export const ContactPage: React.FC = () => {
                       Store Location
                     </span>
                     <strong className="text-base text-[#221F1C] block mt-0.5">Truescape</strong>
-                    <p className="text-[#5A524A]">Hamtramck, MI</p>
+                    <p className="text-[#5A524A]">2727 Yemans St, Hamtramck MI 48212, United States</p>
                   </div>
                 </div>
 
@@ -109,9 +109,9 @@ export const ContactPage: React.FC = () => {
                       href="tel:3135649075"
                       className="text-base font-bold text-[#221F1C] hover:text-[#C58B39] transition-colors block mt-0.5"
                     >
-                      313-564-9075
+                      +1 313-564-9075
                     </a>
-                    <p className="text-xs text-[#786E64]">Mon - Fri, 9:00 AM - 5:00 PM EST</p>
+                    <p className="text-xs text-[#786E64]">Support available Mon - Fri</p>
                   </div>
                 </div>
 
@@ -121,15 +121,15 @@ export const ContactPage: React.FC = () => {
                   </div>
                   <div>
                     <span className="text-xs font-bold uppercase tracking-wider text-[#786E64] block">
-                      Electronic Mail
+                      Customer Support Email
                     </span>
                     <a
-                      href="mailto:2018hamza750@gmail.com"
+                      href="mailto:Truescape00@yahoo.com"
                       className="text-sm sm:text-base font-bold text-[#221F1C] hover:text-[#C58B39] transition-colors block mt-0.5 break-all"
                     >
-                      2018hamza750@gmail.com
+                      Truescape00@yahoo.com
                     </a>
-                    <p className="text-xs text-[#786E64]">Typical response time within 24 hours</p>
+                    <p className="text-xs text-[#786E64]">Response within 24 hours guaranteed</p>
                   </div>
                 </div>
               </div>
