@@ -1,0 +1,770 @@
+import { Category, EBook } from '../types';
+
+export const CATEGORIES: Category[] = [
+  {
+    id: 'fiction',
+    name: 'Fiction',
+    slug: 'fiction',
+    description: 'Immersive storytelling, contemporary novels, and thought-provoking literature.',
+    count: 3,
+    accent: '#3E5C76',
+  },
+  {
+    id: 'business',
+    name: 'Business',
+    slug: 'business',
+    description: 'Strategy, modern leadership, economics, and entrepreneurial execution.',
+    count: 3,
+    accent: '#1D3557',
+  },
+  {
+    id: 'self-development',
+    name: 'Self-Development',
+    slug: 'self-development',
+    description: 'Actionable psychology, mindfulness, personal habits, and peak clarity.',
+    count: 3,
+    accent: '#B07D62',
+  },
+  {
+    id: 'romance',
+    name: 'Romance',
+    slug: 'romance',
+    description: 'Heartfelt journeys, modern emotional connections, and timeless passions.',
+    count: 2,
+    accent: '#A44A3F',
+  },
+  {
+    id: 'mystery-thriller',
+    name: 'Mystery & Thriller',
+    slug: 'mystery-thriller',
+    description: 'Gripping suspense, atmospheric investigations, and unexpected reveals.',
+    count: 2,
+    accent: '#2B2D42',
+  },
+  {
+    id: 'biography',
+    name: 'Biography',
+    slug: 'biography',
+    description: 'Remarkable lived experiences, cultural chronicles, and inspiring journeys.',
+    count: 2,
+    accent: '#475569',
+  },
+  {
+    id: 'health-wellness',
+    name: 'Health & Wellness',
+    slug: 'health-wellness',
+    description: 'Holistic living, restorative nutrition, longevity, and mental stillness.',
+    count: 2,
+    accent: '#2A9D8F',
+  },
+  {
+    id: 'education',
+    name: 'Education',
+    slug: 'education',
+    description: 'Critical thinking, lifelong learning methodologies, and academic insights.',
+    count: 2,
+    accent: '#6D597A',
+  },
+  {
+    id: 'technology',
+    name: 'Technology',
+    slug: 'technology',
+    description: 'Software craft, machine intelligence, computing history, and digital philosophy.',
+    count: 3,
+    accent: '#1B4965',
+  },
+];
+
+export const SAMPLE_BOOKS: EBook[] = [
+  {
+    id: 'the-quiet-architecture',
+    title: 'The Quiet Architecture',
+    author: 'Elena Vance-Corso',
+    category: 'Fiction',
+    shortDescription: 'A delicate and stirring novel exploring memory, historic preservation, and three generations linked by an old riverfront studio in northern Michigan.',
+    fullDescription: 'Set against the shifting seasons of the Great Lakes basin, The Quiet Architecture follows archival architect Mara Lind as she undertakes the restoration of an 1890s brick printworks. Between the layered floorboards and behind copper lintels, she uncovers notebooks detailing an unheralded communal artistic movement. Elena Vance-Corso weaves a tapestry of quiet resilience, human devotion, and the unseen structural beams that hold families together.',
+    price: 14.99,
+    originalPrice: 19.99,
+    rating: 4.9,
+    reviewCount: 42,
+    coverImage: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=800&auto=format&fit=crop',
+    coverAccent: '#2C3E50',
+    formats: ['EPUB', 'PDF', 'MOBI'],
+    pageCount: 342,
+    wordCount: 88500,
+    readingTimeHours: 6.5,
+    publishedDate: '2025-01-15',
+    isbn: '978-1-954302-11-8',
+    language: 'English',
+    featured: true,
+    bestseller: true,
+    keyHighlights: [
+      'Rich atmospheric setting rooted in Great Lakes heritage and industrial revitalization',
+      'Exploration of architectural craftsmanship and archival preservation',
+      'Dual-timeline narrative blending intimate family letters with present-day discovery',
+      'Winner of the Midwest Literary Circle Fiction Fellowship'
+    ],
+    sampleChapterTitle: 'Chapter 1: Mortar and Cedar Dust',
+    sampleChapterContent: [
+      'The morning arrived not with sun, but with a deliberate grey mist that rolled off the Huron inlet and hung over the brickworks like wet linen.',
+      'Mara Lind turned the brass key in the iron padlock of Pier 7. It gave with a dry snap, smelling of machine oil from another century. Inside, the ceiling vaulted thirty feet above her head, ribbed with rough-sawn white pine rafters that had outlasted every empire built upon them.',
+      'She set her leather satchel upon the surveyor\'s trestle table and drew out her carbon pencil. For twenty-two years, people had asked her why she saved things that the weather had already begun to dismantle. She had never found a quick answer. Some things simply held their weight quietly until somebody took the time to measure their plumb line.'
+    ],
+    reviews: [
+      {
+        id: 'rev-1',
+        author: 'Claire D., Ann Arbor',
+        rating: 5,
+        date: '2 weeks ago',
+        title: 'Exquisite prose and unforgettable atmosphere',
+        comment: 'An absolute masterpiece of restraint and depth. Truescape delivered the ePub file within seconds to my reader. One of the best novels I have read all year.',
+        verifiedPurchase: true,
+      },
+      {
+        id: 'rev-2',
+        author: 'Marcus K., Detroit',
+        rating: 5,
+        date: '1 month ago',
+        title: 'Speaks deeply to Michigan industrial beauty',
+        comment: 'The architectural details and emotional stakes hit right home. Beautiful cover design and crystal-clear digital formatting on both my tablet and Kindle.',
+        verifiedPurchase: true,
+      }
+    ]
+  },
+  {
+    id: 'principles-of-enduring-ventures',
+    title: 'Principles of Enduring Ventures',
+    author: 'Julian D. Hastings',
+    category: 'Business',
+    shortDescription: 'A pragmatic framework for building resilient, profitable companies focused on fifty-year survivability rather than quarterly hype.',
+    fullDescription: 'In an era of hyper-inflated valuations and fragile leverage, Julian Hastings presents a rigorous blueprint for sustainable enterprise. Drawing on two decades of advising independent manufacturers, regional software firms, and durable family enterprises, Hastings details capital discipline, uncommoditizable unit economics, and building high-trust internal cultures that resist economic downturns.',
+    price: 18.50,
+    originalPrice: 24.00,
+    rating: 4.8,
+    reviewCount: 38,
+    coverImage: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=800&auto=format&fit=crop',
+    coverAccent: '#1A365D',
+    formats: ['EPUB', 'PDF', 'MOBI'],
+    pageCount: 290,
+    wordCount: 76000,
+    readingTimeHours: 5.5,
+    publishedDate: '2024-11-20',
+    isbn: '978-1-954302-24-0',
+    language: 'English',
+    featured: true,
+    bestseller: true,
+    keyHighlights: [
+      'The 5 Pillars of Enterprise Anti-Fragility under macroeconomic volatility',
+      'Realistic cash-flow allocation strategies for independent founders',
+      'Case studies of Midwest manufacturing and software firms enduring 40+ years',
+      'Includes downloadable financial model templates and operational audit checklists'
+    ],
+    sampleChapterTitle: 'Chapter 1: The Illusion of Terminal Velocity',
+    sampleChapterContent: [
+      'Velocity without steering is simply the most efficient method of finding a concrete wall. In contemporary commerce, speed has been sanctified as an intrinsic moral good, while solvency has been dismissed as an antique inconvenience.',
+      'Consider the difference between an oak tree and a field of summer rye. The rye surges upward in forty days, green and proud, only to wither at the first October frost. The oak grows with infuriating patience, sinking taproots through clay and shale before it ever crowns the treeline. Yet when the storm arrives, the rye is flattened and forgotten, while the oak continues its silent work.',
+      'This volume is written for those who intend to build the oak.'
+    ],
+    reviews: [
+      {
+        id: 'rev-3',
+        author: 'Soren B., Chicago',
+        rating: 5,
+        date: '3 weeks ago',
+        title: 'The antidote to vanity Silicon Valley metrics',
+        comment: 'Every founder, small business operator, and bootstrapped creator should read this. Pure signal, zero filler. Clean PDF formatting with actionable tables.',
+        verifiedPurchase: true,
+      }
+    ]
+  },
+  {
+    id: 'the-art-of-unrushed-living',
+    title: 'The Art of Unrushed Living',
+    author: 'Nadia Rostova',
+    category: 'Self-Development',
+    shortDescription: 'Reclaiming attention, deep concentration, and inner equilibrium in an age of non-stop notification cadence.',
+    fullDescription: 'Modern life treats stillness as a failure of productivity. In this luminous and deeply grounded book, Nadia Rostova combines cognitive science with meditative discipline to show how unhurried rhythms actually produce higher quality creative output, deeper interpersonal relationships, and restored nervous systems.',
+    price: 12.99,
+    originalPrice: 16.99,
+    rating: 4.9,
+    reviewCount: 56,
+    coverImage: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=800&auto=format&fit=crop',
+    coverAccent: '#795548',
+    formats: ['EPUB', 'PDF'],
+    pageCount: 220,
+    wordCount: 54000,
+    readingTimeHours: 4.2,
+    publishedDate: '2025-02-01',
+    isbn: '978-1-954302-39-4',
+    language: 'English',
+    featured: true,
+    newRelease: true,
+    keyHighlights: [
+      'Cognitive protocols for shielding focus against constant digital interruptions',
+      'The morning pacing ritual that reduces midday cortisol spikes',
+      'How to build intentional "analog sanctuaries" in your home and workplace',
+      'Guided reflective prompts designed for daily journaling'
+    ],
+    sampleChapterTitle: 'Introduction: The Price of Perpetual Alertness',
+    sampleChapterContent: [
+      'We have traded our quietude for a constant, twitching state of readiness. We check our pockets for phantom vibrations; we open screens not because we have something to seek, but because the silence of an elevator ride has become unbearable.',
+      'When you stop hurrying, you do not fall behind. You simply begin to see the terrain you have been blindly sprinting across. Stillness is not the absence of energy; it is the containment of energy until it is truly needed.',
+      'Let us begin by putting down the stopwatch.'
+    ],
+    reviews: [
+      {
+        id: 'rev-4',
+        author: 'Lydia M., Grand Rapids',
+        rating: 5,
+        date: '5 days ago',
+        title: 'Calming, profound, and immediately useful',
+        comment: 'I read this in two sittings on my tablet. Rostova’s writing style is gentle yet razor-sharp. Truescape’s reader is wonderful.',
+        verifiedPurchase: true,
+      }
+    ]
+  },
+  {
+    id: 'code-craft-and-clarity',
+    title: 'Code, Craft & Clarity',
+    author: 'Tariq Al-Mansoor',
+    category: 'Technology',
+    shortDescription: 'A philosophical and technical guide to writing readable, maintainable software architectures that endure team turnover.',
+    fullDescription: 'Writing code is easy; building systems that another human being can understand five years from now on a rainy Tuesday morning is a rare discipline. Tariq Al-Mansoor shares thirty fundamental design paradigms across frontend, distributed systems, and API contracts that preserve simplicity as codebases scale.',
+    price: 21.00,
+    originalPrice: 28.00,
+    rating: 4.9,
+    reviewCount: 31,
+    coverImage: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=800&auto=format&fit=crop',
+    coverAccent: '#1E3A8A',
+    formats: ['EPUB', 'PDF'],
+    pageCount: 380,
+    wordCount: 98000,
+    readingTimeHours: 7.0,
+    publishedDate: '2024-10-10',
+    isbn: '978-1-954302-51-6',
+    language: 'English',
+    featured: true,
+    bestseller: true,
+    keyHighlights: [
+      'Designing for readability over clever shorthand',
+      'Managing state transitions without cascading cognitive debt',
+      'The sociology of code reviews: fostering psychological safety and high standards',
+      'Real-world case studies of complex refactorings without system downtime'
+    ],
+    sampleChapterTitle: 'Chapter 1: The Human Behind the Compiler',
+    sampleChapterContent: [
+      'Compilers do not care about your indentation, your variable naming poetry, or whether your modules reflect clean domain boundaries. They will happily digest a single 200,000-line unformatted string of gibberish as long as the semicolons align.',
+      'Code is written for humans first, and computers second. Every line you commit is a letter sent to your future self or an unsuspecting colleague. If you write with impatience, you leave behind an invisible tax that will be paid in overtime, late-night incident bridges, and cynicism.',
+      'Craft begins the moment you refuse to accept "it works" as sufficient.'
+    ],
+    reviews: [
+      {
+        id: 'rev-5',
+        author: 'Devon P., Seattle',
+        rating: 5,
+        date: '2 weeks ago',
+        title: 'A spiritual successor to Pragmatic Programmer',
+        comment: 'Essential reading for any software engineer regardless of stack. Format was clean and diagrams rendered crisply in the PDF.',
+        verifiedPurchase: true,
+      }
+    ]
+  },
+  {
+    id: 'the-last-station-in-trenton',
+    title: 'The Last Station in Trenton',
+    author: 'Cormac S. Reilly',
+    category: 'Mystery & Thriller',
+    shortDescription: 'A gritty, atmospheric noir thriller tracking a retired rail inspector investigating an unmarked midnight cargo container that vanished into the Michigan marshlands.',
+    fullDescription: 'When a decommissioned freight train rolls silently into an abandoned switching yard outside Trenton at 2:00 AM, former railway investigator Arthur Dunn realizes the track switches were intentionally altered by someone who knew the dead signals. As local authorities write it off as simple scrap theft, Dunn discovers a ledger of names dating back forty years—names that connect civic leaders, state politicians, and an unsolved disappearance.',
+    price: 13.50,
+    originalPrice: 17.99,
+    rating: 4.7,
+    reviewCount: 29,
+    coverImage: 'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=800&auto=format&fit=crop',
+    coverAccent: '#1F2937',
+    formats: ['EPUB', 'PDF', 'MOBI'],
+    pageCount: 310,
+    wordCount: 82000,
+    readingTimeHours: 6.0,
+    publishedDate: '2024-12-05',
+    isbn: '978-1-954302-62-2',
+    language: 'English',
+    featured: false,
+    keyHighlights: [
+      'Tense pacing with authentic mid-century industrial detective atmosphere',
+      'Realistic investigative methods without exaggerated Hollywood tropes',
+      'Immersive Michigan rail yard geography and Great Lakes coastal mood',
+      'A multi-layered puzzle that keeps readers guessing until the final siding'
+    ],
+    sampleChapterTitle: 'Chapter 1: Ghost Signal at Milepost 44',
+    sampleChapterContent: [
+      'The semaphore signal at Milepost 44 had been dark since the automotive strikes of 1978. Everyone on the south line knew it. The glass lens had been cracked by a teenager\'s slingshot decades before Arthur Dunn had ever put on an inspector\'s badge.',
+      'Yet on this Tuesday in November, with a sleet falling that turned the ballast rock into greased slate, Arthur saw amber light cutting through the weeds.',
+      'He killed the engine of his pickup and sat listening. There was no horn, no diesel rumble. Just the distant rhythmic clack of iron wheels against cold joint bars, moving too slow to be on any timetable printed by the union.'
+    ],
+    reviews: [
+      {
+        id: 'rev-6',
+        author: 'Robert H., Detroit',
+        rating: 5,
+        date: '1 month ago',
+        title: 'Gritty, smart, and impossible to put down',
+        comment: 'Finished it over a weekend. Cormac Reilly knows how to create atmosphere and suspense without cheap twists.',
+        verifiedPurchase: true,
+      }
+    ]
+  },
+  {
+    id: 'letters-from-the-orchard',
+    title: 'Letters from the Orchard',
+    author: 'Hannah Sterling',
+    category: 'Romance',
+    shortDescription: 'A warm, poignant slow-burn romance between a botanical illustrator recovering from grief and a third-generation cider maker restoring an heirloom grove.',
+    fullDescription: 'Seeking sanctuary from the relentless pace of Manhattan after a family loss, botanical artist Maya Lin accepts a summer residency cataloging endangered heirloom apple varieties in northern Michigan. Her host is Callan Mercer, a quiet, stubborn orchardist fighting to preserve his family\'s heritage against commercial developers. Through shared early mornings in the mist and hand-written field notes, an unexpected tenderness takes root.',
+    price: 11.99,
+    originalPrice: 15.99,
+    rating: 4.8,
+    reviewCount: 47,
+    coverImage: 'https://images.unsplash.com/photo-1516979187457-637abb4f9353?q=80&w=800&auto=format&fit=crop',
+    coverAccent: '#8338EC',
+    formats: ['EPUB', 'PDF', 'MOBI'],
+    pageCount: 280,
+    wordCount: 71000,
+    readingTimeHours: 5.2,
+    publishedDate: '2025-01-28',
+    isbn: '978-1-954302-77-6',
+    language: 'English',
+    featured: true,
+    newRelease: true,
+    keyHighlights: [
+      'Richly depicted botanical illustrations and orchard lore',
+      'Realistic emotional stakes centered on healing and mutual respect',
+      'Cozy, comforting prose that transports readers to rural Michigan summers',
+      'Beloved by book clubs for its memorable dialogue and thoughtful pacing'
+    ],
+    sampleChapterTitle: 'Chapter 1: Russet and Rain',
+    sampleChapterContent: [
+      'The dirt road ended where the trees began, their branches heavy with June fruit the size of walnut shells. Maya turned off the ignition and stepped into air that smelled intensely of wet cedar, moss, and fermentation.',
+      'Callan Mercer emerged from the wooden barn wiping machine grease from his knuckles with a shop rag. He didn\'t smile, but his eyes took in her mud-spattered boots and the oversized wooden watercolor easel strapped to her roof rack.',
+      '"You must be the artist," he said. His voice was gravel washed by rain. "The Northern Spies are in the upper ridge. They don\'t blossom according to New York gallery hours, but they\'ll give you something honest to draw."'
+    ],
+    reviews: [
+      {
+        id: 'rev-7',
+        author: 'Sarah T., Kalamazoo',
+        rating: 5,
+        date: '2 weeks ago',
+        title: 'Sweet, soulful, and deeply comforting',
+        comment: 'This book gave me so much peace. Beautifully formatted ePub with lovely chapter heading ornaments.',
+        verifiedPurchase: true,
+      }
+    ]
+  },
+  {
+    id: 'voices-of-the-assembly-line',
+    title: 'Voices of the Assembly Line',
+    author: 'Kareem O’Connor',
+    category: 'Biography',
+    shortDescription: 'Oral histories and personal memoirs of the men and women who built industrial Detroit and Hamtramck across fifty transformative years.',
+    fullDescription: 'Through hundreds of hours of recorded audio and private family albums, historian Kareem O’Connor chronicles the lived experiences of immigrants, autoworkers, and civic organizers who shaped Hamtramck and greater Detroit from 1920 to 1970. From the clang of stamping presses at the Dodge Main plant to the warm smells of bakeries along Jos. Campau, this biography captures the dignity, solidarity, and grit of the industrial Midwest.',
+    price: 16.99,
+    originalPrice: 22.00,
+    rating: 4.9,
+    reviewCount: 39,
+    coverImage: 'https://images.unsplash.com/photo-1461360370896-922624d12aa1?q=80&w=800&auto=format&fit=crop',
+    coverAccent: '#374151',
+    formats: ['EPUB', 'PDF'],
+    pageCount: 360,
+    wordCount: 92000,
+    readingTimeHours: 6.8,
+    publishedDate: '2024-09-18',
+    isbn: '978-1-954302-88-2',
+    language: 'English',
+    featured: true,
+    keyHighlights: [
+      'First-hand testimonies from Hamtramck and Detroit manufacturing pioneers',
+      'Over 40 archival photographs and historic union newsletters transcribed',
+      'A tribute to the cultural mosaic of Polish, Yemeni, Bengali, and southern Black migration',
+      'Vital civic history preserving personal dignity through generational work'
+    ],
+    sampleChapterTitle: 'Prologue: The Shift Bell at 6:00 AM',
+    sampleChapterContent: [
+      'In Hamtramck, time was measured not by church clocks, but by the plant whistles that carried above the two-story wooden clapboard flats.',
+      'When the horn blew at Dodge Main, three thousand men stepped simultaneously onto the sidewalks of Conant and Joseph Campau. They carried tin lunch pails containing rye bread, dill pickles, thermos coffee, and hard-boiled eggs. In six different languages they wished each other strength for the shift.',
+      'This is the record of what their hands made, and what their hearts endured.'
+    ],
+    reviews: [
+      {
+        id: 'rev-8',
+        author: 'Stanislaw P., Hamtramck MI',
+        rating: 5,
+        date: '3 weeks ago',
+        title: 'Captures the true soul of our community',
+        comment: 'As a lifelong Hamtramck resident, reading this moved me to tears. Truescape did a wonderful service by publishing and curating this digital edition.',
+        verifiedPurchase: true,
+      }
+    ]
+  },
+  {
+    id: 'restorative-sleep-blueprint',
+    title: 'The Restorative Sleep Blueprint',
+    author: 'Dr. Aris Thorne, MD',
+    category: 'Health & Wellness',
+    shortDescription: 'Evidence-based circadian science to defeat chronic insomnia, optimize REM architecture, and wake with effortless mental sharpness.',
+    fullDescription: 'Insomnia and fragmented sleep are not personal moral failures—they are biological mismatches between our paleolithic nervous systems and modern artificial environments. Clinical neurologist Dr. Aris Thorne presents a proven, non-pharmaceutical protocol combining core body temperature management, light frequency calibration, and meal-timing interventions that restore deep regenerative sleep within fourteen days.',
+    price: 14.00,
+    originalPrice: 18.00,
+    rating: 4.8,
+    reviewCount: 52,
+    coverImage: 'https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?q=80&w=800&auto=format&fit=crop',
+    coverAccent: '#0F766E',
+    formats: ['EPUB', 'PDF'],
+    pageCount: 240,
+    wordCount: 60000,
+    readingTimeHours: 4.5,
+    publishedDate: '2024-11-01',
+    isbn: '978-1-954302-99-8',
+    language: 'English',
+    featured: false,
+    bestseller: true,
+    keyHighlights: [
+      'The 90-minute circadian thermal curve and how bedroom temperature dictates REM',
+      'Why common sleep hygiene rules often backfire and create performance anxiety',
+      'The Evening Wind-Down Matrix: step-by-step protocol for high-stress professionals',
+      'Includes downloadable sleep journal and circadian timing worksheets'
+    ],
+    sampleChapterTitle: 'Chapter 1: The Biology of Cellular Restoration',
+    sampleChapterContent: [
+      'While you sleep, your brain undergoes a physical transformation as profound as the street sweepers cleaning an empty metropolis after midnight.',
+      'The glymphatic system opens its cellular gates, flushing cerebrospinal fluid through neural pathways to carry away metabolic waste, including beta-amyloid proteins. If you truncate this window, you do not simply feel tired; you force your brain to run with clogged filters.',
+      'Rest is not passive inactivity. It is the most active biological restoration your body will ever perform.'
+    ],
+    reviews: [
+      {
+        id: 'rev-9',
+        author: 'Priya K., Troy MI',
+        rating: 5,
+        date: '1 month ago',
+        title: 'Finally stopped waking up at 3 AM',
+        comment: 'The thermal protocol alone changed everything for me. Clear, respectful writing backed by solid science.',
+        verifiedPurchase: true,
+      }
+    ]
+  },
+  {
+    id: 'the-inquisitive-mind',
+    title: 'The Inquisitive Mind',
+    author: 'Prof. Margaret H. Calder',
+    category: 'Education',
+    shortDescription: 'Mastering mental models, epistemic humility, and rigorous critical thinking in a world overflowing with conflicting information.',
+    fullDescription: 'How do we know what is genuinely true when algorithms optimize for outrage and certainty? Cambridge educator and cognitive psychologist Margaret Calder dismantles common cognitive traps—from confirmation bias to probabilistic blindness—and teaches twelve enduring analytical habits used by history\'s greatest investigators and scientific innovators.',
+    price: 15.25,
+    originalPrice: 19.50,
+    rating: 4.7,
+    reviewCount: 26,
+    coverImage: 'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=800&auto=format&fit=crop',
+    coverAccent: '#4C1D95',
+    formats: ['EPUB', 'PDF'],
+    pageCount: 310,
+    wordCount: 78000,
+    readingTimeHours: 5.8,
+    publishedDate: '2024-08-14',
+    isbn: '978-1-954302-14-9',
+    language: 'English',
+    featured: false,
+    keyHighlights: [
+      'Twelve foundational mental models for navigating complex decisions',
+      'Techniques for steel-manning opposing arguments before drawing conclusions',
+      'Distinguishing between causal mechanisms and statistical correlation',
+      'Practical exercises for students, educators, and executive decision-makers'
+    ],
+    sampleChapterTitle: 'Chapter 1: The Seduction of Certainty',
+    sampleChapterContent: [
+      'Certainty feels comfortable. It produces a flood of dopamine, simplifies ambiguous realities into black-and-white caricatures, and spares us the labor of rigorous contemplation.',
+      'Yet history teaches us that the greatest intellectual catastrophes occur not when humans are ignorant, but when they are passionately convinced of an assumption they have never examined.',
+      'The mark of an educated mind is not how many answers it can quote, but how comfortably it can hold a well-posed question before leaping to closure.'
+    ],
+    reviews: [
+      {
+        id: 'rev-10',
+        author: 'Daniel G., Ann Arbor',
+        rating: 5,
+        date: '2 months ago',
+        title: 'A brilliant handbook for the modern thinker',
+        comment: 'Bought this for my daughter entering college, ended up reading it cover to cover myself.',
+        verifiedPurchase: true,
+      }
+    ]
+  },
+  {
+    id: 'ai-agents-and-the-new-web',
+    title: 'Autonomous Systems & The New Web',
+    author: 'Dr. Zainab Farooq',
+    category: 'Technology',
+    shortDescription: 'An architectural deep dive into agentic computing, multi-model orchestrations, tool use, and the ethical frontier of intelligent software.',
+    fullDescription: 'The transition from passive software to autonomous reasoning agents is the defining technical paradigm of our decade. In this forward-looking yet thoroughly pragmatic manual, AI architect Dr. Zainab Farooq breaks down orchestration patterns, vector indices, memory persistence, safety boundaries, and the economic shifts facing modern software engineers.',
+    price: 24.50,
+    originalPrice: 32.00,
+    rating: 4.9,
+    reviewCount: 44,
+    coverImage: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop',
+    coverAccent: '#0369A1',
+    formats: ['EPUB', 'PDF'],
+    pageCount: 410,
+    wordCount: 105000,
+    readingTimeHours: 8.0,
+    publishedDate: '2025-01-05',
+    isbn: '978-1-954302-33-1',
+    language: 'English',
+    featured: true,
+    newRelease: true,
+    keyHighlights: [
+      'Comprehensive taxonomy of agentic tool-use and planning architectures',
+      'Handling latency, non-determinism, and token economics in production',
+      'Context window optimization and hierarchical retrieval techniques',
+      'Safety guardrails, sandboxing execution environments, and auditability'
+    ],
+    sampleChapterTitle: 'Chapter 1: Beyond Static Completion',
+    sampleChapterContent: [
+      'When machine learning was confined to scoring risk tables or classifying photographs of domestic animals, software architecture remained comfortably deterministic. You sent input A, and expected output B.',
+      'The modern paradigm represents a rupture. We are no longer writing instructions; we are creating goal specifications for entities capable of multi-step hypothesis formulation, tool discovery, and runtime correction.',
+      'To build successfully in this era requires unlearning the illusion that you control every branch in the call stack.'
+    ],
+    reviews: [
+      {
+        id: 'rev-11',
+        author: 'Ethan W., Austin TX',
+        rating: 5,
+        date: '3 weeks ago',
+        title: 'Most coherent book on AI agents yet',
+        comment: 'No hype, just rigorous engineering design patterns and clear diagrams. Truescape digital download was instant.',
+        verifiedPurchase: true,
+      }
+    ]
+  },
+  {
+    id: 'the-midwest-kitchen-journal',
+    title: 'The Great Lakes Hearth & Table',
+    author: 'Beata Kowalska',
+    category: 'Health & Wellness',
+    shortDescription: 'Seasonal fermentation, heirloom grains, and wholesome comfort cooking inspired by Michigan farm markets and immigrant culinary heritage.',
+    fullDescription: 'From wild morels foraging in the Huron National Forest to sourdough rye traditions preserved in Hamtramck bakeries, chef Beata Kowalska shares 95 approachable recipes celebrating the seasonal produce and rich ethnic heritage of the Great Lakes. Packed with instructions on wild fermentation, bone broths, root cellar storage, and slow weekend braises.',
+    price: 15.99,
+    originalPrice: 21.00,
+    rating: 4.9,
+    reviewCount: 63,
+    coverImage: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=800&auto=format&fit=crop',
+    coverAccent: '#9A3412',
+    formats: ['EPUB', 'PDF'],
+    pageCount: 260,
+    wordCount: 58000,
+    readingTimeHours: 4.8,
+    publishedDate: '2024-10-25',
+    isbn: '978-1-954302-45-4',
+    language: 'English',
+    featured: true,
+    bestseller: true,
+    keyHighlights: [
+      '95 nutrient-dense recipes calibrated for home cooks and busy families',
+      'Masterclasses on sourdough rye, sauerkraut crock fermentation, and herbal vinegars',
+      'Stunning culinary photography and notes on Michigan agricultural history',
+      'Full nutritional breakdowns and printable shopping lists in the PDF edition'
+    ],
+    sampleChapterTitle: 'Introduction: The Sourdough That Survived the Crossing',
+    sampleChapterContent: [
+      'When my great-grandmother sailed from Gdynia in 1913, she carried very few treasures: two hand-embroidered linen napkins, a prayer book, and a small lump of dried rye sourdough starter wrapped in wax paper inside her coat lining.',
+      'That same microbial culture still bubbles on my counter in Hamtramck today. When you bake with it, you are not merely preparing food; you are inhaling the same yeasty, comforting warmth that sustained five generations through Michigan winters.',
+      'Real cooking is an act of memory, generosity, and resilience.'
+    ],
+    reviews: [
+      {
+        id: 'rev-12',
+        author: 'Rachel S., Royal Oak MI',
+        rating: 5,
+        date: '1 month ago',
+        title: 'The pierogi and rye recipes are legendary',
+        comment: 'I love having this eBook on my kitchen iPad. Easy to navigate, beautiful typography, and recipes that turn out delicious every time.',
+        verifiedPurchase: true,
+      }
+    ]
+  },
+  {
+    id: 'scaling-with-empathy',
+    title: 'Scaling with Empathy',
+    author: 'Marcus Vance & Cheryl O\'Leary',
+    category: 'Business',
+    shortDescription: 'How modern leaders maintain deep human connection, ethical accountability, and employee trust while doubling headcount.',
+    fullDescription: 'Growth often breaks what made early companies special: genuine listening, flat communication, and shared mission. Executive coaches Marcus Vance and Cheryl O\'Leary present a practical leadership compass for mid-market founders and department heads navigating the awkward adolescence between scrappy startup and institutional corporate scale.',
+    price: 17.50,
+    originalPrice: 22.50,
+    rating: 4.8,
+    reviewCount: 34,
+    coverImage: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop',
+    coverAccent: '#15803D',
+    formats: ['EPUB', 'PDF', 'MOBI'],
+    pageCount: 275,
+    wordCount: 68000,
+    readingTimeHours: 5.0,
+    publishedDate: '2024-07-29',
+    isbn: '978-1-954302-67-7',
+    language: 'English',
+    featured: false,
+    keyHighlights: [
+      'Designing feedback cadences that prevent executive isolation',
+      'The 1-on-1 coaching framework that reveals silent team burnout early',
+      'Preserving high craftsmanship standards when onboarding new managers',
+      'Actionable templates for transparent internal all-hands meetings'
+    ],
+    sampleChapterTitle: 'Chapter 1: The Silence at Fifty Employees',
+    sampleChapterContent: [
+      'At ten people, everyone knows who had a bad night\'s sleep, whose dog is sick, and what customer complaint needs urgent triage over lunch.',
+      'By the time you reach fifty, an invisible acoustic dampener enters the room. Team members stop blurting out wild ideas. They wait for leadership cues. They begin to whisper in side channels.',
+      'If you do not intentionally construct pipelines for honest, unpunished truth, you will govern your company by rumor and confirmation bias.'
+    ],
+    reviews: [
+      {
+        id: 'rev-13',
+        author: 'Liam C., Grand Rapids',
+        rating: 5,
+        date: '2 months ago',
+        title: 'Invaluable for our management team',
+        comment: 'Clear, direct, and empathetic without being fluffy. Exactly what we needed during our expansion.',
+        verifiedPurchase: true,
+      }
+    ]
+  },
+  {
+    id: 'the-clockmakers-granddaughter',
+    title: 'The Clockmaker of Belle Isle',
+    author: 'Annalise Moreau',
+    category: 'Fiction',
+    shortDescription: 'An enchanting literary mystery set on Detroit’s Belle Isle, where a secretive horologist leaves behind twelve intricate brass automata carrying coded messages.',
+    fullDescription: 'When reclusive master watchmaker Henri Moreau passes away in his stone greenhouse on Belle Isle, his estranged granddaughter Sophie returns to settle the estate. Among shelves of brass balance wheels and pendulum cases, she discovers twelve mechanical songbirds, each wound by a unique key that must be matched to historical landmarks along the Detroit River.',
+    price: 13.99,
+    originalPrice: 18.00,
+    rating: 4.8,
+    reviewCount: 49,
+    coverImage: 'https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?q=80&w=800&auto=format&fit=crop',
+    coverAccent: '#4338CA',
+    formats: ['EPUB', 'PDF', 'MOBI'],
+    pageCount: 330,
+    wordCount: 84000,
+    readingTimeHours: 6.2,
+    publishedDate: '2024-06-12',
+    isbn: '978-1-954302-71-4',
+    language: 'English',
+    featured: false,
+    keyHighlights: [
+      'Lyrical writing infused with horological mechanics and historical wonder',
+      'Vivid Belle Isle Conservatory and Detroit River maritime history',
+      'A deeply moving tale of generational reconciliation and artistic passion',
+      'Includes map illustrations of the island\'s historic hidden paths'
+    ],
+    sampleChapterTitle: 'Chapter 1: Gears in the Conservatory',
+    sampleChapterContent: [
+      'The air under the glass dome of the palm house was eighty degrees and heavy with the scent of damp peat and flowering ginger.',
+      'Sophie held the velvet-lined mahogany box against her chest. Inside, nestled in oiled silk, rested an automaton no larger than a goldfinch. When she turned the tiny ratchet beneath its tail, its brass wings stirred with the softest whir of escapement jewels, and its beak opened to produce three notes of a melody she had not heard since her eighth birthday.'
+    ],
+    reviews: [
+      {
+        id: 'rev-14',
+        author: 'Judith B., Grosse Pointe MI',
+        rating: 5,
+        date: '3 months ago',
+        title: 'Pure magic and beautiful writing',
+        comment: 'A joy to read on quiet evenings. The historical details about Belle Isle are breathtaking.',
+        verifiedPurchase: true,
+      }
+    ]
+  },
+  {
+    id: 'the-habit-reservoir',
+    title: 'The Habit Reservoir',
+    author: 'Kelsey J. Vance',
+    category: 'Self-Development',
+    shortDescription: 'Why willpower depletes and how environmental friction determines what actions you actually repeat day after day.',
+    fullDescription: 'Most people fail to change habits not because they lack discipline, but because they treat willpower as an infinite resource rather than a fragile battery. Behavioral researcher Kelsey Vance introduces the Concept of the Habit Reservoir: using micro-architectures in your physical room, calendar, and devices to make desired behaviors the path of least resistance.',
+    price: 11.50,
+    originalPrice: 15.00,
+    rating: 4.7,
+    reviewCount: 37,
+    coverImage: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=800&auto=format&fit=crop',
+    coverAccent: '#92400E',
+    formats: ['EPUB', 'PDF'],
+    pageCount: 215,
+    wordCount: 52000,
+    readingTimeHours: 4.0,
+    publishedDate: '2024-09-02',
+    isbn: '978-1-954302-83-7',
+    language: 'English',
+    featured: false,
+    keyHighlights: [
+      'The 20-Second Friction Principle for eliminating bad automatic triggers',
+      'How to design your workspace so focus becomes automatic',
+      'Habit stacking techniques tested across 800 participants',
+      'Why perfectionist streaks cause relapse and how to rebound gracefully'
+    ],
+    sampleChapterTitle: 'Chapter 1: The Lie of White-Knuckle Willpower',
+    sampleChapterContent: [
+      'If you place a bowl of chocolate truffles on your desk at 9:00 AM and tell yourself you will not eat one all day, you have not set a test of character. You have set a booby trap for your prefrontal cortex.',
+      'By 3:30 PM, after twelve emails, two budget reviews, and a delayed lunch, your inhibitory control is physically exhausted. You grab three chocolates not because you are weak, but because you foolishly forced your conscious mind to fight your environment for seven hours.',
+      'Win the battle before it starts by designing the room.'
+    ],
+    reviews: [
+      {
+        id: 'rev-15',
+        author: 'Tom R., Lansing MI',
+        rating: 5,
+        date: '2 months ago',
+        title: 'Actionable and free of motivational fluff',
+        comment: 'Simple, direct advice. Implemented the friction rules in my home office and saw immediate changes.',
+        verifiedPurchase: true,
+      }
+    ]
+  },
+  {
+    id: 'letters-from-the-frontier-physicist',
+    title: 'Shadows of the Cosmos',
+    author: 'Dr. Tariq Al-Jamil',
+    category: 'Education',
+    shortDescription: 'An elegant journey through quantum gravity, black hole thermodynamics, and the philosophical boundaries of human understanding.',
+    fullDescription: 'From Einstein\'s thought experiments on moving trains to the latest observations of event horizons, astrophysicist Dr. Tariq Al-Jamil guides the curious reader through the strange and awe-inspiring architecture of modern cosmology. Written with poetic clarity and accessible geometric analogies, this volume turns the most daunting questions of physics into an exhilarating intellectual adventure.',
+    price: 16.50,
+    originalPrice: 21.00,
+    rating: 4.9,
+    reviewCount: 41,
+    coverImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop',
+    coverAccent: '#1E1B4B',
+    formats: ['EPUB', 'PDF'],
+    pageCount: 320,
+    wordCount: 81000,
+    readingTimeHours: 6.0,
+    publishedDate: '2024-05-19',
+    isbn: '978-1-954302-92-9',
+    language: 'English',
+    featured: false,
+    keyHighlights: [
+      'Clear explanations of quantum entanglement without mathematical barriers',
+      'The fascinating story of Hawking radiation and the black hole information paradox',
+      'Reflections on cosmic humility and the limits of empiricism',
+      'Includes 28 custom astronomical diagrams formatted for high-DPI screens'
+    ],
+    sampleChapterTitle: 'Chapter 1: Light at the Edge of Nothing',
+    sampleChapterContent: [
+      'Imagine standing on a shore where the waves do not roll back into the sea, but instead fall perpetually over the edge of a bottomless waterfall from which not even a beam of starlight can return.',
+      'A black hole is not merely a dense boulder in space. It is a place where space and time have traded places—where moving forward into tomorrow means falling inextricably toward the singular point at the center.',
+      'To study it is to press our faces against the glass of reality and ask what lies on the other side.'
+    ],
+    reviews: [
+      {
+        id: 'rev-16',
+        author: 'Elena S., Chicago IL',
+        rating: 5,
+        date: '4 months ago',
+        title: 'Carl Sagan-level poetic clarity',
+        comment: 'A triumph of popular science writing. The formatting in the Truescape app is immaculate.',
+        verifiedPurchase: true,
+      }
+    ]
+  }
+];

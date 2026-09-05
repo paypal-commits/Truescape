@@ -1,0 +1,6 @@
+{
+  "name": "Truescape",
+  "description": "Truescape is a modern online eBook bookstore based in Hamtramck, Michigan offering curated digital books, instant downloads, and an exceptional reading experience.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
